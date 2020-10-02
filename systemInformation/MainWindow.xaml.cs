@@ -67,15 +67,14 @@ namespace systemInformation
                 list.Add($"Available space to current user: bytes,{ d.AvailableFreeSpace}");
                 list.Add($"Total available space: bytes, { d.TotalFreeSpace} ");
                 list.Add($"Total size of drive: bytes { d.TotalSize}");
-                list.Add($"-----------------------------------------");
-                list.Add($" OSVersion:  { Environment.OSVersion.ToString()}");
-                list.Add($" OSVersion.Platform:  { Environment.OSVersion.Platform }");
-                list.Add($" OSVersion.Version:  { Environment.OSVersion.VersionString }");
-                list.Add($" CurrentCulture:  { Application.CurrentCulture.ToString() }");
-                list.Add($" Bootmode:  { SystemInformation.BootMode.ToString() }");
 
             }
-            }
+            list.Add($"-----------------------------------------");
+            list.Add($" OSVersion:  { Environment.OSVersion.ToString()}");
+            list.Add($" OSVersion.Platform:  { Environment.OSVersion.Platform }");
+            list.Add($" CurrentCulture:  { Application.CurrentCulture.ToString() }");
+            list.Add($" Bootmode:  { SystemInformation.BootMode.ToString() }");
+        }
         }
     }
 
