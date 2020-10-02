@@ -59,12 +59,13 @@ namespace systemInformation
                 list.Add($"Drive type { d.DriveType}");
                 if (d.IsReady == true)
 
-                    list.Add($"Volume label: { d.VolumeLabel}");
-                    list.Add($"File system: { d.DriveFormat}");
-                    list.Add($"Available space to current user: bytes,{ d.AvailableFreeSpace}");
-
-                   list.Add($"Total available space: bytes, { d.TotalFreeSpace} ");
-                    list.Add($"Total size of drive: bytes { d.TotalSize}");
+                list.Add($"Volume label: { d.VolumeLabel}");
+                list.Add($"File system: { d.DriveFormat}");
+                list.Add($"Available space to current user: bytes,{ d.AvailableFreeSpace}");
+                list.Add($"Total available space: bytes, { d.TotalFreeSpace} ");
+                list.Add($"Total size of drive: bytes { d.TotalSize}");
+                list.Add($"-----------------------------------------");
+                list.Add($" OSVersion:  { Environment.OSVersion.ToString()}");
                 }
             }
         }

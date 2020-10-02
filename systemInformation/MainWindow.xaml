@@ -14,7 +14,7 @@
                 </Paragraph>
                 <Paragraph>
                     <TextBlock Text="{Binding Path=list[1]}" />
-                </Paragraph>
+                </Paragraph> 
 
             </FlowDocument>
         </RichTextBox>
