@@ -13,6 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using System.Collections;
+using System.Windows.Forms;
+using Application = System.Windows.Forms.Application;
 
 namespace systemInformation
 {
@@ -67,8 +70,9 @@ namespace systemInformation
                 list.Add($"-----------------------------------------");
                 list.Add($" OSVersion:  { Environment.OSVersion.ToString()}");
                 list.Add($" OSVersion.Platform:  { Environment.OSVersion.Platform }");
-                list.Add($" OSVersion.ServicePack:  { Environment.OSVersion.ServicePack }");
                 list.Add($" OSVersion.Version:  { Environment.OSVersion.VersionString }");
+                list.Add($" CurrentCulture:  { Application.CurrentCulture.ToString() }");
+                list.Add($" Bootmode:  { SystemInformation.BootMode.ToString() }");
 
             }
             }
