@@ -66,7 +66,11 @@ namespace systemInformation
                 list.Add($"Total size of drive: bytes { d.TotalSize}");
                 list.Add($"-----------------------------------------");
                 list.Add($" OSVersion:  { Environment.OSVersion.ToString()}");
-                }
+                list.Add($" OSVersion.Platform:  { Environment.OSVersion.Platform }");
+                list.Add($" OSVersion.ServicePack:  { Environment.OSVersion.ServicePack }");
+                list.Add($" OSVersion.Version:  { Environment.OSVersion.VersionString }");
+
+            }
             }
         }
     }
