@@ -7,18 +7,7 @@
         mc:Ignorable="d"
         Title="Systeminfo" Height="450" Width="800">
     <Grid>
-        <RichTextBox>
-            <FlowDocument>
-                <Paragraph>
-                    <TextBlock Text="{Binding Path=Test}" />
-                </Paragraph>
-                <Paragraph>
-                    <TextBlock Text="{Binding Path=list[1]}" />
-                </Paragraph> 
-
-            </FlowDocument>
-        </RichTextBox>
-
+   
         <ListBox Margin="20" ItemsSource="{Binding Items}">
             <ListBox.ItemTemplate>
                 <DataTemplate>

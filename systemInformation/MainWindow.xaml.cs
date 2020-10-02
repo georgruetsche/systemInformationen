@@ -26,15 +26,6 @@ namespace systemInformation
     {
         private string test = "Systeminformation";
 
-        public string Test
-
-        {
-
-            get { return test; }
-
-            set { test = value; }
-
-        }
 
         public List<String> Items
         {
@@ -74,6 +65,11 @@ namespace systemInformation
             list.Add($" OSVersion.Platform:  { Environment.OSVersion.Platform }");
             list.Add($" CurrentCulture:  { Application.CurrentCulture.ToString() }");
             list.Add($" Bootmode:  { SystemInformation.BootMode.ToString() }");
+            list.Add($" Computername:  { SystemInformation.ComputerName.ToString() }");
+            list.Add($" MachnineName:  { Environment.MachineName }");
+            list.Add($" Network:  { SystemInformation.Network.ToString() }");
+            list.Add($" Username:  { SystemInformation.UserName }");
+            list.Add($" UserDomainName:  { SystemInformation.UserDomainName }");
         }
         }
     }
