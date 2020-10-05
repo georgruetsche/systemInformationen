@@ -71,7 +71,6 @@ namespace systemInformation
             list.Add($" Username:  { SystemInformation.UserName }");
             list.Add($" UserDomainName:  { SystemInformation.UserDomainName }");
 
-            list.Add($"-----------------------------------------");
             list.Add($" Network:  { SystemInformation.Network.ToString() }");
         }
         }
