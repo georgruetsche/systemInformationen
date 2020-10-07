@@ -75,6 +75,11 @@ namespace systemInformation
             list.Add($" Network:  { SystemInformation.Network.ToString() }");
             list.Add($"-----------------------------------------");
             list.Add($" MonitorCount:  { SystemInformation.MonitorCount.ToString() }");
+            list.Add($"-----------------------------------------");
+            foreach(DictionaryEntry de in Environment.GetEnvironmentVariables())
+            {
+                list.Add($"{de.Key} = {de.Value}");
+            }
         }
         }
     }
