@@ -68,11 +68,13 @@ namespace systemInformation
             list.Add($" Computername:  { SystemInformation.ComputerName.ToString() }");
             list.Add($" MachnineName:  { Environment.MachineName }");
             list.Add($" UserInteractive:  { SystemInformation.UserInteractive.ToString() }");
-
+            list.Add($"-----------------------------------------");
             list.Add($" Username:  { SystemInformation.UserName }");
             list.Add($" UserDomainName:  { SystemInformation.UserDomainName }");
-
+            list.Add($"-----------------------------------------");
             list.Add($" Network:  { SystemInformation.Network.ToString() }");
+            list.Add($"-----------------------------------------");
+            list.Add($" MonitorCount:  { SystemInformation.MonitorCount.ToString() }");
         }
         }
     }
