@@ -80,6 +80,7 @@ namespace systemInformation
             {
                 list.Add($"{de.Key} = {de.Value}");
             }
+            list.Add($"-----------------------------------------");
         }
         }
     }
